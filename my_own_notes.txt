@@ -1,0 +1,6 @@
+1. create a login using POST method and create a session then store the user id in the session.
+    a. if user
+        session[:user_id] ||= user.id
+
+2. retrieve a user in user controller using show.
+    a. get user by using user = User.find_by(id: session[:user_id])
